@@ -1,0 +1,133 @@
+.projects-bg {
+  min-height: 100vh;
+  background: #f6efe7;
+  padding: 30px;
+}
+
+.projects-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.projects-container h1 {
+  font-size: 36px;
+  margin: 20px 0 35px;
+}
+
+
+/* GRID */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+
+/* CARD */
+
+.project-card {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+  transition: 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+
+/* IMAGE */
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+
+/* CARD BODY */
+
+.card-body {
+  padding: 18px;
+}
+
+.card-body h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+
+/* TAGS */
+
+.tags {
+  margin: 8px 0 10px;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.tags span {
+  background: #f1f1f1;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+
+/* DESCRIPTION */
+
+.card-body p {
+  font-size: 13px;
+  color: #555;
+  min-height: 45px;
+}
+
+
+/* BUTTONS */
+
+.card-buttons {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.primary {
+  background: #ff9a3c;
+  color: white;
+}
+
+.outline {
+  border: 1px solid #111;
+  background: transparent;
+  color: #111;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
