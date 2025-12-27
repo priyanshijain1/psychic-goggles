@@ -34,7 +34,7 @@ const colorPalettes = [
   }
 ];
 
-function createColorPaletteWidget(x, y) {
+function createcolorPaletteWidget(x, y) {
   const widget = document.createElement("div");
   widget.className = "color-palette-widget widget";
 
