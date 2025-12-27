@@ -1,6 +1,6 @@
 .projects-bg {
   min-height: 100vh;
-  background: #9895e1f0;
+  /* background-color: #bcc9fb; */
   padding: 30px;
 }
 
@@ -28,7 +28,7 @@
 /* CARD */
 
 .project-card {
-  background: rgba(9, 43, 148, 0.804);
+  background: #FAF5EE;
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 8px 30px rgba(0,0,0,0.12);
@@ -45,9 +45,9 @@
 
 .project-card img {
   width: 100%;
-  height: 275px;
+  height: 250px;
   object-fit: cover;
-  padding: 15px;
+  padding: 12px;
   border-radius: 18px;
 }
 
@@ -106,7 +106,7 @@
 }
 
 .primary {
-  background: #1121baf5;
+  background: #fdb47d;
   color: white;
 }
 

@@ -25,7 +25,7 @@
 
 .cta-buttons {
   display: flex;
-  gap: 12px;
+  gap: 15px;
 }
 
 .btn {
@@ -35,25 +35,31 @@
   transition: 0.3s;
 }
 
-.primary {
-  background: var(--primary);
+.social {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.github {
+  background: #0d1117;
   color: white;
 }
 
-.secondary {
-  background: #111;
+.discord {
+  background: #5865F2;
   color: white;
 }
 
-.outline {
-  border: 1px solid #111;
-  background: transparent;
+.twitter {
+  background: #1DA1F2;
+  color: white;
 }
 
-.btn:hover {
-  transform: scale(1.05);
+.social:hover {
+  transform: scale(1.06);
+  opacity: 0.9;
 }
-
 
 /* RIGHT IMAGE */
 
