@@ -23,14 +23,24 @@ function createSpotifyWidget(x, y) {
     try {
       const res = await fetch("/api/spotify");
       const data = await res.json();
-      if (!data) return;
+      if (!data?.items?.length) return;
 
-      widget.querySelector(".album-art").src = data.albumArt;
-      widget.querySelector(".title").textContent = data.title;
-      widget.querySelector(".artist").textContent = data.artist;
+      const track = data.items[0].track;
+
+      widget.querySelector(".album-art").src =
+        track.album.images[0].url;
+
+      widget.querySelector(".title").textContent =
+        track.name;
+
+      widget.querySelector(".artist").textContent =
+        track.artists.map(a => a.name).join(", ");
+
       widget.querySelector(".lp").textContent = "Last played..";
-    } catch {
-      widget.querySelector(".title").textContent = "Spotify unavailable";
+    } catch (e) {
+      console.log(e);
+      widget.querySelector(".title").textContent =
+        "Spotify unavailable";
     }
   }
 
