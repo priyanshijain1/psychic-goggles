@@ -1,6 +1,6 @@
 .projects-bg {
   min-height: 100vh;
-  background: #f6efe7;
+  background: #9895e1f0;
   padding: 30px;
 }
 
@@ -28,7 +28,7 @@
 /* CARD */
 
 .project-card {
-  background: white;
+  background: rgba(9, 43, 148, 0.804);
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 8px 30px rgba(0,0,0,0.12);
@@ -37,6 +37,7 @@
 
 .project-card:hover {
   transform: translateY(-6px);
+  box-shadow: 0 10px 40px rgba(41, 20, 50, 0.486);
 }
 
 
@@ -44,8 +45,10 @@
 
 .project-card img {
   width: 100%;
-  height: 200px;
+  height: 275px;
   object-fit: cover;
+  padding: 15px;
+  border-radius: 18px;
 }
 
 
@@ -103,7 +106,7 @@
 }
 
 .primary {
-  background: #ff9a3c;
+  background: #1121baf5;
   color: white;
 }
 
